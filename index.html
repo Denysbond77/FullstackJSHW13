@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Фігури</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      svg {
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        border: 2px solid black;
+      }
+
+      .animated {
+        transition: fill 1s ease-in-out, stroke 1s ease-in-out;
+      }
+
+      .animated:hover {
+        fill: yellow;
+        stroke: red;
+      }
+    </style>
+  </head>
+  <body>
+    <svg viewBox="0 0 300 300">
+      <rect
+        x="10"
+        y="10"
+        width="50"
+        height="50"
+        fill="red"
+        stroke="black"
+        stroke-width="3"
+      />
+
+      <rect
+        x="80"
+        y="10"
+        width="80"
+        height="50"
+        fill="blue"
+        stroke="green"
+        stroke-width="6"
+      />
+
+      <circle
+        cx="50"
+        cy="120"
+        r="30"
+        fill="green"
+        stroke="blue"
+        stroke-width="8"
+        class="animated"
+      />
+
+      <ellipse
+        cx="150"
+        cy="120"
+        rx="40"
+        ry="25"
+        fill="purple"
+        stroke="orange"
+        stroke-width="4"
+      />
+    </svg>
+  </body>
+</html>
